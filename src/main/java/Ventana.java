@@ -39,15 +39,9 @@ public class Ventana extends JFrame {
             tamaño = Integer.parseInt(txtTamaño.getText());
             if (tamaño < inicio || tamaño > limite) {
                 JOptionPane.showMessageDialog(null, "Ingrese un número entre " + inicio + " y " + limite);
+                txtTamaño.setText("");
             } else {
-
-
-
                 //AQUI LO SUBDIVIDO
-                /*if (arreglo.length >= 0 || arreglo.length < 33000) {//10.000
-                    ordenInsercion.ordenandoInsercion(arreglo);
-
-                }*/
                 arreglo = new int[tamaño];//10000
                 asignandoValores(arreglo, random);
                 arregloAux = arreglo;//10.000
@@ -65,17 +59,15 @@ public class Ventana extends JFrame {
                 ordenInsercion.ordenandoInsercion(arreglo);//10000
                 long fin1 = System.nanoTime();
                 long resultado1 = fin1 - inicio1;
-                System.out.println("Insercion tarda: " + TimeUnit.MILLISECONDS.convert(resultado1,TimeUnit.NANOSECONDS) + " ms");
                 long inicio2 = System.nanoTime();
-                ordenBubble.ordenandoBubble(arregloAux);
+                //System.out.println("Insercion tarda: " + TimeUnit.MILLISECONDS.convert(resultado1,TimeUnit.NANOSECONDS) + " ms");
+                ordenBubble.ordenandoBubble(arregloBurbuja);
                 long fin2 = System.nanoTime();
                 long resultado2 = fin2 - inicio2;
-                System.out.println("burbuja tarda: " + TimeUnit.MILLISECONDS.convert(resultado2,TimeUnit.NANOSECONDS) + " ms");
+                //System.out.println("burbuja tarda: " + TimeUnit.MILLISECONDS.convert(resultado2,TimeUnit.NANOSECONDS) + " ms");
                 //ordenQuick.ordenarQuick(arregloAux);
-                System.out.println("METODO INSERCION");
-                mostrarArreglo(arreglo);
-                System.out.println("METODO BURBUJA");
-                mostrarArreglo(arregloAux);
+                //mostrarArreglo(arreglo);
+                //mostrarArreglo(arregloAux);
 
                 int posicion1 = 0;
                 for (int i = 0; i < arreglo.length; i++) {
@@ -100,43 +92,13 @@ public class Ventana extends JFrame {
 
                     }
                 }
-
-                /*for (int i = 0; i < arreglo.length; i++) {
-                    try{
-                        arregloInsercion[i] = arreglo[i];
-                    }catch(Exception exeption){
-                    }
-                }
-
-                for (int i = 0; i < arregloAux.length; i++) {
-                    try{
-                        arregloBurbuja[i] = arregloAux[i];
-                    }catch(Exception exeption){
-                    }
-                }*/
-
-                System.out.println("ESTE ES EL VERDADERO INSERCION");
+                System.out.println("=========INSERCION==========");
                 mostrarArreglo(arregloInsercion);
-                System.out.println("ESTE ES EL VERDADERO BURBUJA");
+                System.out.println("===========BUBBLE===========");
                 mostrarArreglo(arregloBurbuja);
-
-                /*if (arreglo.length >= 33001 || arreglo.length <= 66000) {
-                    int baseBubble = arreglo[33001];
-
-                }*/
-                /*if (arreglo.length >= 0 || arreglo.length <= 33000) {
-                    ordenInsercion.ordenandoInsercion(arreglo);
-                    if (arreglo.length >= 33001 || arreglo.length < 66000) {
-                        int tamañoBubble = arreglo.length - 33000;
-                        System.out.println(tamañoBubble);
-                        arregloAux = new int[tamañoBubble];
-                        for (int i = 33001; i < arreglo.length; i++) {
-                            int inicioBubble = arregloAux[i];
-                            //arregloAux[] = arreglo[i];
-                        }
-                        ordenBubble.ordenandoBubble(arregloAux);
-                    }
-                }*/
+                System.out.println("");
+                logger.debug("LA INSERCION TARDA: " + TimeUnit.MILLISECONDS.convert(resultado1, TimeUnit.NANOSECONDS)+" ms");
+                logger.debug("El BUBBLE TARDA: " + TimeUnit.MILLISECONDS.convert(resultado2, TimeUnit.NANOSECONDS)+" ms");
             }
         });
     }
