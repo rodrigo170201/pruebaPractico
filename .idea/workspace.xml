@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico2/PanelImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico2/Ventana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/herramientaPractico2/Imagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/herramientaPractico2/PanelImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/herramientaPractico2/VentanaImagen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -31,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/rodri/IdeaProjects/pruebaPractico/src/main/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rodri/IdeaProjects/pruebaPractico/src/main/java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rodri\IdeaProjects\pruebaPractico\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Ventana">
     <configuration name="Consola" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consola" />
       <module name="pruebaPractico" />
@@ -51,8 +63,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Ventana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practico2.Ventana" />
+      <module name="pruebaPractico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VentanaImagen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="herramientaPractico2.VentanaImagen" />
+      <module name="pruebaPractico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="herramientaPractico2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ventana" />
+        <item itemvalue="Application.VentanaImagen" />
         <item itemvalue="Application.Consola" />
       </list>
     </recent_temporary>
@@ -73,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660622804062</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hola">
+      <created>1660626638452</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660626638452</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
