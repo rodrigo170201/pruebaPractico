@@ -20,7 +20,7 @@ public class Imagen {
         for (int i=0;i<ancho;i++){
             for (int j=0;j<alto;j++){
                 g.setColor(new Color(pixeles[i][j]));
-                g.drawLine(i,j,i,j);
+                g.drawRect(i,j,i,j);
             }
         }
     }

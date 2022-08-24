@@ -15,7 +15,7 @@ public class VentanaImagen extends JFrame {
         this.setVisible(true);
     }
     public void inicializarImagen(){
-        modelo = new Imagen(700,700);
+        modelo = new Imagen(500,500);
         dibujarCuadrado();
     }
 
@@ -23,17 +23,27 @@ public class VentanaImagen extends JFrame {
         VentanaImagen v = new VentanaImagen();
     }
      public void dibujarCuadrado(){
-         for (int i=100; i< modelo.getAncho()-100; i++){
-             modelo.setColor(i,100,255,255,255);
+         int totalLinea=0;
+         int mitadInicio=0;
+
+         for (int i=180; i< modelo.getAncho()-180; i++){
+             modelo.setColor(i,180,255,255,255);
+             totalLinea +=i;
+             if (i==mitadInicio){
+                 dibujarCuadrado();
+             }
          }
-         for (int i=100;i<modelo.getAncho()-100;i++){
-             modelo.setColor(i, modelo.getAlto()-100, 255,255,255);
+         mitadInicio=totalLinea/3;
+
+         System.out.println("El tamaño es: "+ mitadInicio);
+         for (int i=180;i<modelo.getAncho()-180;i++){
+             modelo.setColor(i, modelo.getAlto()-180, 255,255,255);
          }
-         for (int j=100;j< modelo.getAlto()-100;j++){
-             modelo.setColor(100,j,255,255,255);
+         for (int j=180;j< modelo.getAlto()-180;j++){
+             modelo.setColor(180,j,255,255,255);
          }
-         for (int j=100;j< modelo.getAlto()-100;j++){
-             modelo.setColor(modelo.getAncho()-100,j,255,255,255);
+         for (int j=180;j< modelo.getAlto()-180;j++){
+             modelo.setColor(modelo.getAncho()-180,j,255,255,255);
          }
      }
 }
