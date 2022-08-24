@@ -12,6 +12,7 @@ public class Ventana extends JFrame {
     private JTextField txtProfundidad=new JTextField();
     private JButton btnInicia = new JButton("Dibujar");
     private PanelImagen panelFractal;
+    private int profundidad;
     public Ventana(){
         super("Fractal");
         setSize(500,500);
@@ -55,7 +56,18 @@ public class Ventana extends JFrame {
         ventanaUsuario.add(txtProfundidad);
         ventanaUsuario.add(btnInicia);
         btnInicia.addActionListener(e -> {
+            try {
+                profundidad = Integer.parseInt(txtProfundidad.getText());
+                JOptionPane.showMessageDialog(null, "Dato ingresado");
+                System.out.println("La profundidad es: " + profundidad);
+                ventanaUsuario.setVisible(false);
 
+                txtProfundidad.setText("");
+                profundidad = 0;
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, "Ingrese un número valido, no letras");
+                txtProfundidad.setText("");
+            }
         });
 
     }
