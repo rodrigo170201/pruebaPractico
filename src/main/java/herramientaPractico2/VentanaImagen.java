@@ -30,13 +30,14 @@ public class VentanaImagen extends JFrame {
              modelo.setColor(i,180,255,255,255);
              totalLinea +=i;
              if (i==mitadInicio){
+                 modelo.setColor(mitadInicio,180,255,0,0);
                  dibujarCuadrado();
              }
          }
          mitadInicio=totalLinea/3;
 
          System.out.println("El tamaño es: "+ mitadInicio);
-         for (int i=180;i<modelo.getAncho()-180;i++){
+         /*for (int i=180;i<modelo.getAncho()-180;i++){
              modelo.setColor(i, modelo.getAlto()-180, 255,255,255);
          }
          for (int j=180;j< modelo.getAlto()-180;j++){
@@ -44,6 +45,6 @@ public class VentanaImagen extends JFrame {
          }
          for (int j=180;j< modelo.getAlto()-180;j++){
              modelo.setColor(modelo.getAncho()-180,j,255,255,255);
-         }
+         }*/
      }
 }
