@@ -6,8 +6,8 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class PanelImagen extends JPanel implements PropertyChangeListener {
-    private int alto=500;
-    private int ancho=500;
+    private int alto=600;
+    private int ancho=600;
     private Fractal objeto;
     public PanelImagen(Fractal obj){
         setLayout(null);
