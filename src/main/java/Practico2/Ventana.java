@@ -1,9 +1,13 @@
 package Practico2;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.swing.*;
 import java.util.EventListener;
 
 public class Ventana extends JFrame {
+    private Logger log = LogManager.getLogger(Ventana.class);
     private JMenuBar barraMenu = new JMenuBar();
     private JMenu menuItems = new JMenu("Inicio");
     private JMenuItem e1 = new JMenuItem("Fractal");
@@ -20,6 +24,7 @@ public class Ventana extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //this.add(panel);
+        cuadrado = new Fractal(1);
         cargarElementos();
         //panelFractal = new PanelImagen(500,500);
         //pack();
@@ -28,7 +33,10 @@ public class Ventana extends JFrame {
         setVisible(true);
     }
     private void cargarElementos(){
-        setLayout(null);
+        //setLayout(null);
+        //Panel de dibujo
+        panel = new PanelImagen(cuadrado);
+        getContentPane().add(panel);
         setJMenuBar(barraMenu);
         barraMenu.add(menuItems);
         menuItems.add(e1);
@@ -38,13 +46,14 @@ public class Ventana extends JFrame {
             try {
                 String numero = JOptionPane.showInputDialog("Ingrese el tamaño del fractal");
                 profundidad = Integer.parseInt(numero);
-                JOptionPane.showMessageDialog(null, "Dato ingresado");
-                System.out.println("La profundidad es: " + profundidad);
-                cuadrado.setProfundidad(profundidad);
-                cuadrado.cambia();
-            }catch (NullPointerException ex) {
-                /*modelo.dibujar(getGraphics());
-                txtProfundidad.setText("");*/
+                if (profundidad<=0){
+                    JOptionPane.showMessageDialog(null,"Ingrese un número mayor a 0");
+                }else {
+                    log.debug("La profundidad del fractal es: " + profundidad);
+                    cuadrado.setProfundidad(profundidad);
+                    cuadrado.cambia();
+                }
+            }catch (Exception ex) {
                 JOptionPane.showMessageDialog(null,"Coloque numero, no letra");
             }
 
@@ -52,10 +61,6 @@ public class Ventana extends JFrame {
         salir.addActionListener(e -> {
             cerrarPrograma();
         });
-        //Panel de dibujo
-        panel = new PanelImagen(cuadrado);
-        getContentPane().add(panel);
-
     }
     public void cerrarPrograma(){
         dispose();

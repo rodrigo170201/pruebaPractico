@@ -17,13 +17,9 @@ public class PanelImagen extends JPanel implements PropertyChangeListener {
     public PanelImagen(Fractal obj){
         setLayout(null);
         objeto = obj;
-        //objeto.addListener(this);
+        objeto.addListener(this);
         setPreferredSize(new Dimension(ancho,alto));
     }
-    /*public PanelImagen(int alto, int ancho){
-        this.alto=alto;
-        this.ancho=ancho;
-    }*/
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);

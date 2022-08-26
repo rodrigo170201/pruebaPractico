@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico2/Fractal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico2/IFractal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico2/Fractal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico2/Fractal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Practico2/PanelImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico2/PanelImagen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Practico2/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico2/Ventana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/herramientaPractico2/VentanaImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/herramientaPractico2/VentanaImagen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661317025460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hola">
+      <created>1661453730411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661453730411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
