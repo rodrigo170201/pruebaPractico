@@ -48,6 +48,12 @@ public class Imagen implements iDibujar {
         observado.firePropertyChange("IMAGEN",true,false);
 
     }
+    public void cambiosRealizados(){
+        observado.firePropertyChange("IMAGEN",true,false);
+    }
+    public int get(int i, int j){
+        return pixeles[i][j];
+    }
 
     public void addListener(PropertyChangeListener listener){
         observado.addPropertyChangeListener(listener);
@@ -67,11 +73,6 @@ public class Imagen implements iDibujar {
         }
     }
 
-    public int get(int i, int j){
-        return pixeles[i][j];
-    }
-
-
     public int getAncho() {
         return ancho;
     }
@@ -90,6 +91,7 @@ public class Imagen implements iDibujar {
         }
         ancho = bi.getWidth();
         alto = bi.getWidth();
+
         pixeles=new int[ancho][alto];
         for (int j=0;j<alto;j++){
             for (int i=0;i<ancho;i++){

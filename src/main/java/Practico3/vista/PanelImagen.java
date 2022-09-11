@@ -14,6 +14,7 @@ import java.beans.PropertyChangeListener;
 public class PanelImagen extends JPanel implements PropertyChangeListener, MouseListener, MouseMotionListener {
 
     private Escena modelo;
+
     public PanelImagen(Escena escena){
         modelo=escena;
         modelo.addListener(this);
