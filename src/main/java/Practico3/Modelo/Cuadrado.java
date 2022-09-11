@@ -51,9 +51,6 @@ public class Cuadrado implements iDibujar {
         this.tamaño = tamaño;
     }
 
-    public PropertyChangeSupport getObservar() {
-        return observar;
-    }
 
     public void setObservar(PropertyChangeSupport observar) {
         this.observar = observar;
@@ -65,6 +62,11 @@ public class Cuadrado implements iDibujar {
 
     public void setSeleccionado(boolean seleccionado) {
         this.seleccionado = seleccionado;
+    }
+    public void moverA(int x, int y){
+        this.x=x;
+        this.y=y;
+        observar.firePropertyChange("CUADRADO",false, true);
     }
 
 }
