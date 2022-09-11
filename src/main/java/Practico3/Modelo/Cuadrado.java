@@ -70,3 +70,4 @@ public class Cuadrado implements iDibujar {
     }
 
 }
+

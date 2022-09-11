@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class Escena implements iDibujar {
     private Imagen imagen;
     private ArrayList<Cuadrado> objCuadrados;
+    private ArrayList<Circulo> objCirculos;
     private PropertyChangeSupport observado;
     public Escena(){
         imagen = new Imagen(400,400);
@@ -45,6 +46,10 @@ public class Escena implements iDibujar {
     public void addCuadrado(Cuadrado c){
         objCuadrados.add(c);
         observado.firePropertyChange("ESCENA",true ,false);
+    }
+    public void addCirculo(Circulo cir){
+        objCirculos.add(cir);
+        observado.firePropertyChange("ESCENA",true,false);
     }
     public void addListener(PanelImagen panelImagen){
         observado.addPropertyChangeListener(panelImagen);

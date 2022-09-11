@@ -1,5 +1,6 @@
 package Practico3.vista;
 
+import Practico3.Modelo.Circulo;
 import Practico3.Modelo.Cuadrado;
 import Practico3.Modelo.Escena;
 
@@ -19,6 +20,7 @@ public class Ventana extends JFrame {
     private JMenuItem mn = new JMenuItem("Cargar Imagen");
     private JMenuItem itemSalir = new JMenuItem("Salir");
     private JMenuItem itemCuadrado = new JMenuItem("Cuadrado");
+    private JMenuItem itemCirculo = new JMenuItem("Circulo");
 
     public Ventana(){
         setTitle("Practico 3");
@@ -46,6 +48,7 @@ public class Ventana extends JFrame {
         menuItems.add(mn);
         menuItems.add(itemSalir);
         menuEdit.add(itemCuadrado);
+        menuEdit.add(itemCirculo);
         mn.addActionListener(e -> {
            archivoAbrir();
         });
@@ -55,12 +58,20 @@ public class Ventana extends JFrame {
         itemCuadrado.addActionListener(e -> {
             objetosCuadrados();
         });
+        itemCirculo.addActionListener(e -> {
+            objetosCirculos();
+        });
 
     }
     private void objetosCuadrados(){
         Cuadrado c = new Cuadrado(50,50,100);
         c.addListener(panel);
         modelo.addCuadrado(c);
+    }
+    private void objetosCirculos(){
+        Circulo cir = new Circulo(100,100,100);
+        cir.addListener(panel);
+        modelo.addCirculo(cir);
     }
     private void archivoAbrir(){
         String direccion = "C:\\Users\\pc\\IdeaProjects";
