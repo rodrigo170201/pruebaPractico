@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Consola.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrdenamientoBubble.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrdenamientoInsercion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrdenamientoQuick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ventana.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +169,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662910029140</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="hola">
+      <created>1662945044596</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662945044596</updated>
+    </task>
+    <task id="LOCAL-00010" summary="hola">
+      <created>1662945111446</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662945111446</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
