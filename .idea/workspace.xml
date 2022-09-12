@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practico2/PanelImagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico2/PanelImagen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practico2/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico2/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Consola.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrdenamientoBubble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrdenamientoInsercion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrdenamientoQuick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ventana.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,10 +55,23 @@
       <recent name="C:\Users\rodri\IdeaProjects\pruebaPractico\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ventana">
+  <component name="RunManager" selected="Application.Practico3.vista.Ventana">
     <configuration name="Consola" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consola" />
       <module name="pruebaPractico" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practico3.vista.Ventana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practico3.vista.Ventana" />
+      <module name="pruebaPractico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico3.vista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practico3.vista.Ventana" />
         <item itemvalue="Application.Ventana" />
         <item itemvalue="Application.VentanaImagen" />
         <item itemvalue="Application.Consola" />
@@ -138,7 +155,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661480997598</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hola">
+      <created>1662860020013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662860020013</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hola">
+      <created>1662907695826</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662907695826</updated>
+    </task>
+    <task id="LOCAL-00008" summary="hola">
+      <created>1662910029140</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662910029140</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
