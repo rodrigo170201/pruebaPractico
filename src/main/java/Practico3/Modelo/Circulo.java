@@ -68,5 +68,10 @@ public class Circulo implements iDibujar {
     public void setSeleccionado(boolean seleccionado) {
         this.seleccionado = seleccionado;
     }
+    public void moverCirA(int x, int y){
+        this.x=x;
+        this.y=y;
+        observar.firePropertyChange("CIRCULO",false,true);
+    }
 
 }

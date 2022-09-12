@@ -97,7 +97,6 @@ public class Ventana extends JFrame {
         dispose();
         System.exit(0);
     }
-
     public static void main(String[] args) {
         Ventana v = new Ventana();
     }

@@ -18,6 +18,7 @@ public class Escena implements iDibujar {
     public Escena(){
         imagen = new Imagen(400,400);
         objCuadrados = new ArrayList<>();
+        objCirculos = new ArrayList<>();
         observado = new PropertyChangeSupport(this);
     }
 
@@ -32,6 +33,9 @@ public class Escena implements iDibujar {
         }
         for (Cuadrado c : objCuadrados){
             c.dibujar(g);
+        }
+        for (Circulo cir : objCirculos){
+            cir.dibujar(g);
         }
     }
 
@@ -49,7 +53,7 @@ public class Escena implements iDibujar {
     }
     public void addCirculo(Circulo cir){
         objCirculos.add(cir);
-        observado.firePropertyChange("ESCENA",true,false);
+        observado.firePropertyChange("ESCENA CIRCULO",true,false);
     }
     public void addListener(PanelImagen panelImagen){
         observado.addPropertyChangeListener(panelImagen);
@@ -58,21 +62,46 @@ public class Escena implements iDibujar {
             c.addListener(panelImagen);
         }
     }
+    public void addListenerCirculo(PanelImagen panelImagen){
+        observado.addPropertyChangeListener(panelImagen);
+        this.imagen.addListener(panelImagen);
+        for (Circulo cir : objCirculos){
+            cir.addListener(panelImagen);
+        }
+    }
     public Cuadrado getObjetoSeleccionado(){
         for (Cuadrado c : objCuadrados){
             if (c.isSeleccionado())return c;
         }
         return null;
     }
-    public void soltarObjeto(){
+    public Circulo getCirculoSelccionado(){
+        for (Circulo cir : objCirculos){
+            if (cir.isSeleccionado())return cir;
+        }
+        return null;
+    }
+    public void soltarCuadrado(){
         for (Cuadrado c:objCuadrados){
             c.setSeleccionado(false);
+        }
+    }
+    public void soltarCirculo(){
+        for (Circulo cir:objCirculos){
+            cir.setSeleccionado(false);
         }
     }
     public void seleccionarObjeto(int x,int y){
         for (Cuadrado c:objCuadrados){
             if (x>c.getX() && x <(c.getX()+c.getTamaño()) && y>c.getY()&& y <(c.getY()+c.getTamaño())){
                 c.setSeleccionado(true);
+            }
+        }
+    }
+    public void seleccionarCirculo(int x, int y){
+        for (Circulo cir : objCirculos){
+            if (x>cir.getX()&& x<(cir.getX()+cir.getTamaño()) && y>cir.getY()&& y <(cir.getY()+cir.getTamaño())){
+                cir.setSeleccionado(true);
             }
         }
     }

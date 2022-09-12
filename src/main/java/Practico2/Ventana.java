@@ -9,22 +9,24 @@ import java.util.EventListener;
 public class Ventana extends JFrame {
     private Logger log = LogManager.getLogger(Ventana.class);
     private JMenuBar barraMenu = new JMenuBar();
-    private JMenu menuItems = new JMenu("Iniciar");
+    private JMenu menuItems = new JMenu("Inicio");
     private JMenuItem e1 = new JMenuItem("Fractal");
     private JMenuItem salir = new JMenuItem("Salir");
+    private JFrame ventanaUsuario=new JFrame();
+    private JTextField txtProfundidad=new JTextField();
+    private JButton btnInicia = new JButton("Dibujar");
     public PanelImagen panel;
     private Fractal cuadrado;
     private int profundidad;
-    private boolean esVerdadero = false;
     public Ventana(){
         super("Fractal");
-        setSize(600,600);
+        setSize(500,500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //this.add(panel);
-        cuadrado = new Fractal(2);
+        cuadrado = new Fractal(1);
         cargarElementos();
-        //setResizable(false);
+        setResizable(false);
         setVisible(true);
     }
     private void cargarElementos(){
@@ -37,23 +39,20 @@ public class Ventana extends JFrame {
         menuItems.add(salir);
         e1.addActionListener(e -> {
             //ventanita();
-            while(esVerdadero == false){
-                try {
-                    String numero = JOptionPane.showInputDialog("Ingrese el tamaño del fractal");
-                    profundidad = Integer.parseInt(numero);
-                    if (profundidad<=0){
-                        JOptionPane.showMessageDialog(null,"Ingrese un número mayor a 0");
-                    }else {
-                        esVerdadero = true;
-                        log.debug("La profundidad del fractal es: " + profundidad);
-                        cuadrado.setProfundidad(profundidad);
-                        cuadrado.cambia();
-                    }
-                }catch (Exception ex) {
-                    JOptionPane.showMessageDialog(null,"Coloque numero, no letra");
+            try {
+                String numero = JOptionPane.showInputDialog("Ingrese el tamaño del fractal");
+                profundidad = Integer.parseInt(numero);
+                if (profundidad<=0){
+                    JOptionPane.showMessageDialog(null,"Ingrese un número mayor a 0");
+                }else {
+                    log.debug("La profundidad del fractal es: " + profundidad);
+                    cuadrado.setProfundidad(profundidad);
+                    cuadrado.cambia();
                 }
+            }catch (Exception ex) {
+                JOptionPane.showMessageDialog(null,"Coloque numero, no letra");
             }
-            esVerdadero=false;
+
         });
         salir.addActionListener(e -> {
             cerrarPrograma();
