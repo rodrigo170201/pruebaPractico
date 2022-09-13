@@ -6,16 +6,16 @@ import java.awt.*;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-public class Texto implements iDibujar {
-    private String text;
+public class Linea implements iDibujar {
     private int x;
     private int y;
+    private int tamaño;
     private PropertyChangeSupport observar;
     private boolean seleccionado;
-    public Texto(String texto, int w, int h, int tamaño){
-        text=texto;
-        x=w;
+    public Linea(int w,int h, int t){
+        x= w;
         y=h;
+        tamaño=t;
         observar=new PropertyChangeSupport(this);
     }
     public void addListener(PropertyChangeListener listener){
@@ -23,15 +23,7 @@ public class Texto implements iDibujar {
     }
     @Override
     public void dibujar(Graphics g) {
-        g.drawString("",x,y);
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
+        g.drawLine(x,y,tamaño,y);
     }
 
     public int getX() {
@@ -50,6 +42,14 @@ public class Texto implements iDibujar {
         this.y = y;
     }
 
+    public int getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(int tamaño) {
+        this.tamaño = tamaño;
+    }
+
     public PropertyChangeSupport getObservar() {
         return observar;
     }
@@ -65,9 +65,9 @@ public class Texto implements iDibujar {
     public void setSeleccionado(boolean seleccionado) {
         this.seleccionado = seleccionado;
     }
-    public void moverTextA(int x, int y){
+    public void moverLineaA(int x, int y){
         this.x=x;
         this.y=y;
-        observar.firePropertyChange("TEXTO",false,true);
+        observar.firePropertyChange("LINEA", false,true);
     }
 }

@@ -1,8 +1,6 @@
 package Practico3.vista;
 
-import Practico3.Modelo.Circulo;
-import Practico3.Modelo.Cuadrado;
-import Practico3.Modelo.Escena;
+import Practico3.Modelo.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,6 +19,8 @@ public class Ventana extends JFrame {
     private JMenuItem itemSalir = new JMenuItem("Salir");
     private JMenuItem itemCuadrado = new JMenuItem("Cuadrado");
     private JMenuItem itemCirculo = new JMenuItem("Circulo");
+    private JMenuItem itemTexto = new JMenuItem("Texto");
+    private JMenuItem itemLinea = new JMenuItem("Linea");
 
     public Ventana(){
         setTitle("Practico 3");
@@ -49,6 +49,8 @@ public class Ventana extends JFrame {
         menuItems.add(itemSalir);
         menuEdit.add(itemCuadrado);
         menuEdit.add(itemCirculo);
+        menuEdit.add(itemTexto);
+        menuEdit.add(itemLinea);
         mn.addActionListener(e -> {
            archivoAbrir();
         });
@@ -60,6 +62,15 @@ public class Ventana extends JFrame {
         });
         itemCirculo.addActionListener(e -> {
             objetosCirculos();
+        });
+        itemTexto.addActionListener(e -> {
+            String txtTexto = JOptionPane.showInputDialog("Ingrese su texto");
+            Texto tx = new Texto(txtTexto,200,200,txtTexto.length());
+            tx.addListener(panel);
+            modelo.addTexto(tx);
+        });
+        itemLinea.addActionListener(e -> {
+            objetosLineas();
         });
 
     }
@@ -73,6 +84,12 @@ public class Ventana extends JFrame {
         cir.addListener(panel);
         modelo.addCirculo(cir);
     }
+    private void objetosLineas(){
+        Linea l = new Linea(150,150,100);
+        l.addListener(panel);
+        modelo.addLinea(l);
+    }
+
     private void archivoAbrir(){
         String direccion = "C:\\Users\\pc\\IdeaProjects";
         JFileChooser inputFile = new JFileChooser();
