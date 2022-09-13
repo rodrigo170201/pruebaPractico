@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Linea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Escena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Escena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Texto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Texto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/vista/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/vista/Ventana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662999905226</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hola">
+      <created>1663038812488</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663038812488</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

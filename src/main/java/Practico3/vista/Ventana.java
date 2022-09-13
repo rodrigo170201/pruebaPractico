@@ -24,7 +24,7 @@ public class Ventana extends JFrame {
 
     public Ventana(){
         setTitle("Practico 3");
-        setSize(500,500);
+        setSize(700,700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         iniciarImagen();
