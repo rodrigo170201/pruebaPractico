@@ -19,7 +19,7 @@ public class Escena implements iDibujar {
     private ArrayList<Linea> objLineas;
     private PropertyChangeSupport observado;
     public Escena(){
-        imagen = new Imagen(400,400);
+        imagen = new Imagen(400,300);
         objCuadrados = new ArrayList<>();
         objCirculos = new ArrayList<>();
         objTextos = new ArrayList<>();
@@ -34,7 +34,7 @@ public class Escena implements iDibujar {
             BufferedImage rs = new BufferedImage(imagen.getAncho(),imagen.getAlto(),BufferedImage.TYPE_INT_ARGB);
             Graphics2D g2d = rs.createGraphics();
             imagen.dibujar(g2d);
-            g.drawImage(rs,0,0,null);
+            g.drawImage(rs,260,10,null);
         }
         for (Cuadrado c : objCuadrados){
             c.dibujar(g);

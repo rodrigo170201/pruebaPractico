@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Dibujar/iDibujar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Listas/Lista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Cuadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Escena.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Imagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Vista/PanelContenedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Vista/Ventana.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Escena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Escena.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/vista/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/vista/Ventana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +59,7 @@
       <recent name="C:\Users\rodri\IdeaProjects\pruebaPractico\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practico3.vista.Ventana">
+  <component name="RunManager" selected="Application.Practico4.Vista.Ventana">
     <configuration name="Consola" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consola" />
       <module name="pruebaPractico" />
@@ -65,6 +73,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Practico3.vista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practico4.Vista.Ventana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practico4.Vista.Ventana" />
+      <module name="pruebaPractico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practico4.Vista.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practico4.Vista.Ventana" />
         <item itemvalue="Application.Practico3.vista.Ventana" />
         <item itemvalue="Application.Ventana" />
         <item itemvalue="Application.VentanaImagen" />
@@ -172,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663038812488</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="hola">
+      <created>1663039881216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663039881216</updated>
+    </task>
+    <task id="LOCAL-00010" summary="hola">
+      <created>1663039940141</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663039940141</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -12,6 +12,7 @@ public class Ventana extends JFrame {
     private Escena modelo;
     private PanelImagen panel;
 
+
     private JMenuBar barraMenu = new JMenuBar();
     private JMenu menuItems = new JMenu("Inicio");
     private JMenu menuEdit = new JMenu("Editar");
@@ -23,13 +24,15 @@ public class Ventana extends JFrame {
     private JMenuItem itemLinea = new JMenuItem("Linea");
 
     public Ventana(){
+        setLayout(null);
         setTitle("Practico 3");
-        setSize(700,700);
+        setSize(800,700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         iniciarImagen();
 
         cargarElementos();
+
 
         panel = new PanelImagen(modelo);
 
