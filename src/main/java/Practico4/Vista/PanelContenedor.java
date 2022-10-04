@@ -1,7 +1,8 @@
 package Practico4.Vista;
 
 import Practico3.Modelo.Circulo;
-import Practico3.Modelo.Cuadrado;
+import Practico4.Listas.Lista;
+import Practico4.Modelo.Cuadrado;
 import Practico4.Modelo.Escena;
 
 import javax.swing.*;
@@ -14,6 +15,7 @@ import java.beans.PropertyChangeListener;
 
 public class PanelContenedor extends JPanel implements PropertyChangeListener, MouseListener, MouseMotionListener {
     private Escena modelo;
+    private Lista<Escena> listEscena;
     private int x;
     private int y;
     private int ancho;
@@ -33,6 +35,11 @@ public class PanelContenedor extends JPanel implements PropertyChangeListener, M
         modelo.addListener(this);
         this.addMouseListener(this);
         this.addMouseMotionListener(this);
+    }
+    public PanelContenedor(int x, int y, int w, int h,Lista<Escena> o,Color c){
+        setBounds(x,y,w,h);
+        setBackground(c);
+        listEscena=o;
     }
     @Override
     public Dimension getPreferredSize(){
@@ -58,12 +65,13 @@ public class PanelContenedor extends JPanel implements PropertyChangeListener, M
 
     @Override
     public void mousePressed(MouseEvent e) {
+        modelo.seleccionarCuadrado(e.getX(),e.getY());
 
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        modelo.soltarCuadrado();
     }
 
     @Override
@@ -78,7 +86,10 @@ public class PanelContenedor extends JPanel implements PropertyChangeListener, M
 
     @Override
     public void mouseDragged(MouseEvent e) {
-
+        Cuadrado m = modelo.getObjetoSeleccionado();
+        if (m!=null){
+            m.moverCuadradoA(e.getX(),e.getY());
+        }
     }
 
     @Override

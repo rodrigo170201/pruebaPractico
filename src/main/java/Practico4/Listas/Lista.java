@@ -1,7 +1,9 @@
 package Practico4.Listas;
 
 import Practico2.IFractal;
+import Practico4.Modelo.Escena;
 
+import javax.swing.*;
 import java.util.Iterator;
 
 public class Lista<E> implements Iterable<E>{
@@ -38,6 +40,19 @@ public class Lista<E> implements Iterable<E>{
         actual.setSiguiente(nuevo);
         tamaño++;
     }
+    /*public Lista mostrarLista(Escena escena){
+        Lista<Escena> laLista=null;
+        JLabel nombre;
+        if (raiz==null){
+            return null;
+        }else {
+            for (Escena e:laLista){
+                e.getImagen();
+                e.se
+            }
+        }
+        return laLista;
+    }*/
     public void eliminar(int pos){
         if (pos==0){
             raiz = raiz.getSiguiente();

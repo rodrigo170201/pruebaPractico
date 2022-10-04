@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a124c40-8b20-475d-a609-eac665120ceb" name="Changes" comment="hola">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Dibujar/iDibujar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Listas/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Cuadrado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Escena.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Imagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Vista/PanelContenedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Vista/Ventana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Circulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Escena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/Modelo/Escena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Practico3/vista/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico3/vista/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico4/Listas/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico4/Listas/Lista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Escena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Escena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Imagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico4/Modelo/Imagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico4/Vista/PanelContenedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico4/Vista/PanelContenedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Practico4/Vista/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Practico4/Vista/Ventana.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663039940141</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="hola">
+      <created>1664825881542</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664825881542</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

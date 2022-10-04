@@ -97,6 +97,7 @@ public class Imagen implements iDibujar {
             }
         }
         observado.firePropertyChange("IMAGEN", true,false);
+
     }
 
 }

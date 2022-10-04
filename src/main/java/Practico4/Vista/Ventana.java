@@ -1,15 +1,18 @@
 package Practico4.Vista;
 
+import Practico4.Listas.Lista;
+import Practico4.Modelo.Circulo;
 import Practico4.Modelo.Cuadrado;
 import Practico4.Modelo.Escena;
 
 import javax.swing.*;
 import java.awt.*;
+import java.beans.PropertyChangeListener;
 import java.io.File;
 
 public class Ventana extends JFrame {
     private Escena modelo;
-    //private Lista<Escena>listaEscenas = new Lista<>();
+    private Lista<Escena> listaEscenas = new Lista<>();
     //Paneles
     private PanelContenedor panelLista = new PanelContenedor(10,10,220,620, Color.green);
     private PanelContenedor panelDeEscenas;
@@ -31,11 +34,13 @@ public class Ventana extends JFrame {
         setSize(800,700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        System.out.println(listaEscenas);
         iniciarImagen();
         cargarElementos();
 
 
         panelDeEscenas = new PanelContenedor(modelo);
+        panelLista = new PanelContenedor(10,10,220,620,listaEscenas,Color.gray);
         add(panelLista);
         //add(panelDeEscenas);
         this.getContentPane().setLayout(new BorderLayout());
@@ -66,7 +71,7 @@ public class Ventana extends JFrame {
             objetosCuadrados();
         });
         itemCirculo.addActionListener(e -> {
-
+            objetosCirculo();
         });
         itemTexto.addActionListener(e -> {
 
@@ -84,6 +89,14 @@ public class Ventana extends JFrame {
         }
         File archivoConImagen = inputFile.getSelectedFile();
         modelo.getImagen().cargarImagen(archivoConImagen);
+        listaEscenas.insertar(modelo);
+            nombresArchivos(archivoConImagen);
+    }
+    public void nombresArchivos(File nombreArchivo){
+        String nombres="";
+        nombres=nombreArchivo.getName()+"\n";
+        System.out.println(nombres);
+
     }
     public void cerrarPrograma(){
         dispose();
@@ -94,12 +107,18 @@ public class Ventana extends JFrame {
         c.addListener(panelDeEscenas);
         modelo.addCuadrado(c);
     }
+    public void objetosCirculo(){
+        Circulo cir =new Circulo(100,100,100);
+        cir.addListener(panelDeEscenas);
+        modelo.addCirculo(cir);
+    }
     public void iniciarImagen(){
         modelo=new Escena();
         for (int i=0;i<300;i++){
             modelo.getImagen().setColor(i,100,10,10,10);
         }
     }
+
     public static void main(String[] args) {
         Ventana v = new Ventana();
     }
