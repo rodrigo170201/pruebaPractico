@@ -43,10 +43,10 @@ public class DibujarArbol<E>{
                 xHijo+=(anchoHijo+ESPACIO_HORIZONTAL);
             }
             g.setColor(Color.white);
-            g.fillOval(xNodo - ANCHO_NODO / 2, yNodo, ANCHO_NODO, ANCHO_NODO);
+            g.fillOval(xNodo- ANCHO_NODO/2, yNodo, ANCHO_NODO, ANCHO_NODO);
             g.setColor(Color.black);
             g.drawOval(xNodo - ANCHO_NODO / 2, yNodo, ANCHO_NODO, ANCHO_NODO);
-            g.drawString(nodo.getIdentificador(), xNodo , yNodo + ANCHO_NODO / 2);
+            g.drawString(nodo.getIdentificador(), xNodo-5 , yNodo + ANCHO_NODO / 2);
 
             return anchoTotal;
         }

@@ -14,7 +14,9 @@ public class VentanaArbol extends JFrame {
     private JMenuItem itemSalir = new JMenuItem("Salir");
     private String txtLinkUsuario="";
     private PanelArbol panelPrincipal;
+    private int vecesAmbos = 0;
     public VentanaArbol(){
+        this.setSize(500,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.getContentPane().setLayout(new BorderLayout());
         this.setLocationRelativeTo(null);
@@ -43,6 +45,7 @@ public class VentanaArbol extends JFrame {
             URL objUrl = null;
             try {
                 objUrl = new URL(txtLinkUsuario);
+                System.out.println(txtLinkUsuario.length());
             } catch (MalformedURLException ex) {
                 throw new RuntimeException(ex);
             }
@@ -71,7 +74,6 @@ public class VentanaArbol extends JFrame {
     public void validarhttp(String result){
         String conpararHttp = "http://";
         String conpararHttps = "https://";
-        int vecesAmbos = 0;
         for (int i =0;i<result.length();i++){
             if (result.substring(i).startsWith(conpararHttp) || result.substring(i).startsWith(conpararHttps)){
                 vecesAmbos++;
@@ -90,7 +92,8 @@ public class VentanaArbol extends JFrame {
     }
     private DibujarArbol<String> inicializarArbol(){
         Arbol<String> a = new Arbol<>();
-        String[] vector = {"a", "b", "c", "d"};
+        String[] vector = {"a", "b", "c", "d", "e", "f"};
+        String[]vectorPrueba = new String[vecesAmbos];
         a.añadir("a",txtLinkUsuario, null);
         /*a.añadir("b", "b",txtLinkUsuario);
         a.añadir("c", "c",txtLinkUsuario);
